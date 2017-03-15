@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <title>触摸屏</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body style="margin:0;">
+    <div class="pos-box clearfix">
+        <div class="pos-consume-content pull-l" style="display:none;">
+            <div class="content-left-box pull-l">
+                <div class="memberleft-box" style="display:none;">
+                <div class="member-info clearfix">
+                    <div class="info-logo pull-l">
+                        <img class="logo-img" src="img/list-cus-icon.png" style="width:55px;height:55px;margin:3px 22px 0;"/>
+                        <p class="icon-box">
+                            <img class="follow-wx-icon" src="img/follow-wx-icon.png" title="已关注公众号"/>
+                                <img class="unfollow-wx-icon" src="img/unfollow-wx-icon.png" title="未关注公众号"/>
+                                <img class="bind-wx-icon" src="img/bind-wx-icon.png" title="已绑定微信"/>
+                                <!-- <img class="unbind-wx-icon" src="img/unbind-wx-icon.png" title="未绑定微信"/>
+                                <img class="freeze-icon" src="img/freeze-icon.png" title="已冻结"/>
+                                <img class="unfreeze-icon" src="img/unfreeze-icon.png" title="未冻结"/> -->
+                        </p>
+
+                    </div>
+                    <div class="info-left pull-l">
+                        <p>昵称：<span></span></p>
+                        <p>手机号：<span>19837287273</span></p>
+                        <p>注册门店：<span>千百度南京西路八佰伴商城店</span></p>
+                        <p>注册时间：<span>2017-2-21 19:58:43</span></p>
+                        <p>会员卡号：<span>198372872733424322</span></p>
+                    </div>
+                    <div class="info-right pull-l">
+                        <p>昵称：<span></span></p>
+                        <p>手机号：<span>19837287273</span></p>
+                        <p>注册门店：<span>千百度南京西路八佰伴商城店</span></p>
+                        <p>注册时间：<span>2017-2-21 19:58:43</span></p>
+                        <p>会员卡号：<span>198372872733424322</span></p>
+                    </div>
+                </div>
+                <div class="member-info-table">
+                    <ul class="style-list">
+                        <li class="active">积分</li>
+                        <li>优惠券</li>
+                    </ul>
+                    <div class="member-point-box" style="display:none;">
+                        <div class="table-head">
+                            <p>
+                            <span>
+                                <img src="img/pos-point-icon.png" />
+                                <span>目前积分：<span class="point-num">1000</span></span>
+                            </span>
+                            <button class="using-point-btn pull-r">使用积分</button>
+                            </p>
+                        </div>
+                        <div class="table-box">
+                        <table class="table"　border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>更新时间</th>
+                                    <th>变更时间</th>
+                                    <th>订单编号</th>
+                                    <th>渠道</th>
+                                    <th>积分变化</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                            </tbody>
+
+                        </table>
+                        </div>
+                        <div class="table-box" style="border-radius: 5px;
+    overflow: hidden;">
+                        <table class="table" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>会员</th>
+                                    <th>会员卡号</th>
+                                    <th>会员手机号</th>
+                                    <th>变更数值</th>
+                                    <th>操作时间</th>
+                                    <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="member-coupon-box">
+                        <div class="table-head">
+                            <p>
+                            <span>
+                                <img src="img/member-coupon-icon.png" />
+                                <span>可用优惠券：<span class="coupon-num"></span></span>张
+                            </span>
+                            <button class="using-coupon-btn pull-r">使用优惠券</button>
+                            </p>
+                        </div>
+                        <div class="table-box">
+                        <table class="table" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>优惠券名称</th>
+                                    <th>类型</th>
+                                    <th>面额</th>
+                                    <th>有效期</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="table-box" style="border-radius: 5px;
+    overflow: hidden;">
+                        <table class="table" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>优惠券名称</th>
+                                    <th>类型</th>
+                                    <th>面额</th>
+                                    <th>券码</th>
+                                    <th>核销时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="coupon-left-box">
+                    <div class="coupon-coupon-list">
+                        <div class="coupon-list" style="width:470px;margin:0 auto;margin-top:">
+                                <div class="coupon-dot"><img style="width: 100%;" src="img/coupon-top-dot.png" /></div>
+                                <div class="coupon-top clearfix">
+                                    <img class="pull-l"  style="width:74px;" src="img/list-coupon-icon.png"/>
+                                    <div class="pull-l">
+                                        <p>优惠券名称</p>
+                                        <p>抵用券</p>
+                                        <p>使用场景</p>
+                                    </div>
+                                    <div class="pull-r">
+                                        <p class="coupon-top-discount">20元</p>
+                                        <p class="coupon-top-scene">不限</p>
+                                    </div>
+                                </div>
+                                <div class="coupon-bottom">
+                                    <span>有效时间</span>
+                                    <span class="coupon-bottom-time">2017-3-24 19:00:00</span>
+                                </div>
+                            </div>
+                        <button class="verification-coupon-btn">核销</button>
+                    </div>
+                    <div class="table-box" style="border-radius: 5px;
+    overflow: hidden;">
+                        <table class="table" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>优惠券名称</th>
+                                    <th>类型</th>
+                                    <th>面额</th>
+                                    <th>券码</th>
+                                    <th>核销时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="content-right-box pull-l">
+                <div class="point-input-keybox" style="display:none;">
+                    <div class="num-input">
+                        <span class="text-num"></span><span class="cursor blink">|</span>
+                        <span class="input-tip">请输入卡号或手机号</span>
+                    </div>
+                    <div class="search-btn-box">
+                        <button class="search-btn">查询卡号</button>
+                        <button class="search-btn">查询手机号</button>
+                    </div>
+                </div>
+                <div class="coupon-input-keybox">
+                    <div class="num-input">
+                        <span class="text-num"></span><span class="cursor blink">|</span>
+                        <span class="input-tip">扫码优惠券或输入优惠券码</span>
+                    </div>
+                    <div class="search-btn-box">
+                        <button class="search-btn">优惠券核销</button>
+                        <button class="search-btn">重新输入</button>
+                    </div>
+                </div>
+                <div class="num-key-box clearfix">
+                    <ul class="num-key-ul pull-l">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li class="zero-btn">0</li>
+                        <li>.</li>
+                    </ul>
+                    <ul class="change-key pull-l">
+                        <li class="delet-btn"><img src="img/delet-icon.png" /></li>
+                        <li class="ok-btn"><img src="img/ok-icon.png" /></li>
+                    </ul>
+                </div>
+                <div class="current-information">
+                    <p><span class="store-name">门店明细</span>POS</p>
+                    <p>员工姓名：<span class="staff-name">圈圈</span></p>
+                    <p class="current-time">2017</p>
+                </div>
+            </div>
+        </div>
+        <div class="opeartion-log pull-l">
+            <div class="tab-box">
+                <ul>
+                    <li>积分操作</li>
+                    <li>优惠券核销</li>
+                </ul>
+            </div>
+            <div class="opeartion-point">
+            <div class="search-box">
+                <div class="form-group inline">
+                    <label>会员卡号：</label>
+                    <input type="text" value="" placeholder="输入会员卡号，20位" data-inputtype="number" maxlength="20">
+                </div>
+                <div class="form-group inline">
+                    <label>会员手机号：</label>
+                    <input type="text" value="" placeholder="输入手机号，11位" data-inputtype="number" maxlength="20">
+                </div>
+                <div class="form-group inline">
+                    <label>操作日期：</label>
+                    <input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+                    <input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+                </div>
+                <div>
+                    <button>重置</button>
+                    <button>查询</button>
+                </div>
+            </div>
+            <div class="table-box" style="border-radius: 5px;
+    overflow: hidden;">
+                        <table class="table" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>会员</th>
+                                    <th>会员卡号</th>
+                                    <th>会员手机号</th>
+                                    <th>变更数值</th>
+                                    <th>操作时间</th>
+                                    <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+            <div class="info">
+                <p>门店名称</p>
+                <p>员工姓名<span></span></p>
+                <p>当前日期</p>
+            </div>
+            <div class="change-table-btn-box">
+
+            </div>
+            </div>
+
+            <div class="opeartion-coupon">
+            <div class="search-box">
+                <div class="form-group inline">
+                    <label>会员卡号：</label>
+                    <input type="text" value="" placeholder="输入会员卡号，20位" data-inputtype="number" maxlength="20">
+                </div>
+                <div class="form-group inline">
+                    <label>会员手机号：</label>
+                    <input type="text" value="" placeholder="输入手机号，11位" data-inputtype="number" maxlength="20">
+                </div>
+                <div class="form-group inline">
+                    <label>操作日期：</label>
+                    <input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+                    <input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+                </div>
+                <div>
+                    <button>重置</button>
+                    <button>查询</button>
+                </div>
+            </div>
+            <div class="table-box" style="border-radius: 5px;
+    overflow: hidden;">
+                        <table class="table" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>优惠券名称</th>
+                                    <th>类型</th>
+                                    <th>面额</th>
+                                    <th>券码</th>
+                                    <th>操作人</th>
+                                    <th>核销时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                    <td>会员</td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+            <div class="info">
+                <p>门店名称</p>
+                <p>员工姓名<span></span></p>
+                <p>当前日期</p>
+            </div>
+            <div class="change-table-btn-box">
+
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="tab-box pull-l" style="margin-top:30px;">
+            <ul class="tab-list">
+                <li class="list-btn active">会员</li>
+                <li class="list-btn">优惠券</li>
+                <li class="list-btn">操作记录</li>
+            </ul>
+            <button class="close-btn">X</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- 积分弹出层 -->
+    <div class="modal fade" id="using_point_modal" tabindex="99" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width:927px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">使用积分</h4>
+                     </div>
+                    <div class="modal-body clearfix">
+                        <div class="clearfix">
+                        <div class="point-left pull-l">
+                            <div class="point-input-group">
+                                <label>使用积分</label>
+                                <div class="using-point-num input-box">
+                                    <span class="text-num"></span><span class="cursor blink">|</span>
+                                    <span class="input-tip">输入使用积分数，5位数以内</span>
+                                </div>
+                            </div>
+                            <div class="point-input-group">
+                                <label>收银金额</label>
+                                <div class="input-box">
+                                    <span class="text-num"></span><span class="cursor blink">|</span>
+                                    <span class="input-tip">输入收银金额，10位数以内，两位小数</span>
+                                </div>
+                            </div>
+                            <div class="point-input-group">
+                                <label>线下单号</label>
+                                <div class="input-box">
+                                    <span class="text-num"></span><span class="cursor blink">|</span>
+                                    <span class="input-tip">输入或扫描线下单号，20位以内</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="point-right pull-l">
+                            <div class="num-key-box clearfix">
+                                <ul class="num-key-ul pull-l">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li class="zero-btn">0</li>
+                                    <li>.</li>
+                                </ul>
+                                <ul class="change-key pull-l">
+                                    <li class="delet-btn"><img src="img/delet-icon.png" /></li>
+                                    <li class="ok-btn"><img src="img/ok-icon.png" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="using_point_modal_btn">
+                            <button class="using-btn">使用</button>
+                            <button class="cancel-btn">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 使用优惠券弹出层 -->
+    <div class="modal fade" id="using_coupon_modal" tabindex="99" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width:927px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">使用优惠券</h4>
+                     </div>
+                    <div class="modal-body" style="height:550px;">
+                        <div class="coupon-list-box clearfix">
+                            <div class="coupon-list">
+                                <div class="coupon-dot"><img src="img/coupon-top-dot.png" /></div>
+                                <div class="coupon-top clearfix">
+                                    <img class="pull-l"  src="img/list-coupon-icon.png"/>
+                                    <div class="pull-l">
+                                        <p>优惠券名称</p>
+                                        <p>抵用券</p>
+                                        <p>使用场景</p>
+                                    </div>
+                                    <div class="pull-r">
+                                        <p class="coupon-top-discount">20元</p>
+                                        <p class="coupon-top-scene">不限</p>
+                                    </div>
+                                </div>
+                                <div class="coupon-bottom">
+                                    <span>有效时间</span>
+                                    <span class="coupon-bottom-time">2017-3-24 19:00:00</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="using_point_modal_btn">
+                            <p style="font-size: 16px;color: #2b5e93;">已选中<span>X</span>张券，请再次确认后使用！</p>
+                            <button class="using-btn">使用</button>
+                            <button class="return-btn">重置</button>
+                            <button class="cancel-btn">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js" ></script>
+    <script src="1.js"></script>
+</body>
+</html>

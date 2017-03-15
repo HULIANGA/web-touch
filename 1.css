@@ -1,0 +1,441 @@
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+body,p{
+    padding:0;
+    margin:0;
+}
+.pos-box p,.pos-box ul{
+    margin:0;
+}
+.clearfix {display: inline-block;}  /* for IE/Mac */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.tab-list{
+    width:50px;
+    color:#fff;
+    font-size:20px;
+    font-family: "Microsoft Yahei",Tahoma,"Lucida Grande",Verdana,STXihei,hei;
+}
+.list-btn{
+    padding: 30px 25px;
+    display: inline-block;
+    line-height: 20px;
+    background-color: #51A6FF;
+    margin-bottom: 10px;
+    border-radius: 0 5px 5px 0;
+}
+.list-btn.active{
+    background-color:#2B5E93;
+}
+.pull-l{
+    float:left;
+}
+.pull-r{
+    float:right;
+}
+body{
+    width:100%;
+}
+img{
+    vertical-align: middle;
+}
+.pos-box{
+    width：1024px;
+    margin:0 auto;
+}
+.content-left-box{
+    width:542px;
+    height:670px;
+    background-color:#2B5E93;
+    margin-right:3px;
+    border-radius: 5px;
+    padding:15px;
+}
+.member-info{
+    width:100%;
+    height:105px;
+    background-color:#F1F5F8;
+    border-radius:5px;
+    font-size:12px;
+    line-height:15px;
+    padding:15px 0;
+}
+.pos-box .icon-box{
+    margin-left:20px;
+    margin-top:5px;
+}
+.info-left{
+    border-right:1px solid #BCBDBD;
+}
+.info-right{
+    padding-left:10px;
+    max-width:180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height:105px;
+}
+.style-list li{
+    background-color:#fff;
+    color:#2B5E93;
+    font-size:20px;
+    display:inline-block;
+    border-radius:5px 5px 0 0;
+    width:125px;
+    line-height:45px;
+    text-align:center;
+}
+.style-list li.active{
+    background-color:#51A6FF;
+}
+.table-head{
+    background-color:#51A6FF;
+    color:#fff;
+    line-height:54px;
+    border-radius:0 5px 0 0;
+    font-size:18px;
+}
+.table-box thead{
+    background-color:#fff;
+    color:#2B5E93;
+    border:none;
+    padding:none;
+}
+.table-head{
+    padding:0 12px;
+}
+.using-point-btn,.using-coupon-btn{
+    line-height:30px;
+    font-size:16px;
+    color:#fff;
+    background-color:#A9D976;
+    width:98px;
+    height:35px;
+    border:none;
+    border-radius:5px;
+    margin-top: 10px;
+    padding:0;
+}
+.num-input{
+    width:364px;
+    height:66px;
+    border-radius:5px;
+    border:1px solid #aaa;
+    color:#aaa;
+    font-size:24px;
+    text-align: center;
+    padding:0;
+    line-height: 66px;
+    background-color: #fff;
+}
+.cursor.blink {
+    display:none;
+    animation: blink 1s infinite steps(1, start);
+    -webkit-animation:blink 1s infinite steps(1, start);
+    -moz-animation:blink 1s infinite steps(1, start);
+    -o-animation:blink 1s infinite steps(1, start);
+}
+/*这里设置动画blink*/
+@keyframes blink {
+    0%, 100% {
+        color: #aaa;
+    }
+    50% {
+        color: #fff;
+    }
+}
+@-moz-keyframes blink {
+    0%, 100% {
+        color: #aaa;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@-webkit-keyframes blink{
+    0%, 100% {
+        color: #aaa;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@-o-keyframes blink{
+    0%, 100% {
+        color: #aaa;
+    }
+    50% {
+        color: #fff;
+    }
+}
+input::-webkit-input-placeholder{
+    font-size:20px;
+    line-height:66px;
+    color:#aaa;
+}
+.search-btn-box{
+    margin:15px 0 45px 0;
+}
+.search-btn{
+    width:177px;
+    height:68px;
+    color:#fff;
+    font-size:20px;
+    line-height:68px;
+    text-align:center;
+    background-color:#EF8F52;
+    border:none;
+    border-radius:5px;
+}
+.search-btn.visited{
+    background-color:#8B9FAF;
+    color:#2B5E93;
+}
+.search-btn:nth-of-type(1){
+    margin-right:6px;
+}
+.content-right-box{
+    padding:18px 15px;
+    width:397px;
+    height:670px;
+    background-color:#2B5E93;
+    border-radius: 5px;
+}
+.num-key-ul{
+    width:273px;
+}
+.num-key-box li{
+    width:89px;
+    height:75px;
+    margin:1px;
+    float:left;
+    background-color:#F1F5F8;
+    color:#2B5E93;
+    line-height:75px;
+    text-align:center;
+    font-size:30px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.num-key-box li.visited{
+    background-color:#8B9FAF;
+}
+.num-key-box .num-key-ul .zero-btn{
+    width:180px;
+}
+.num-key-box .change-key{
+    width:90px;
+}
+.num-key-box .change-key .delet-btn{
+    background-color:#51A6FF;
+}
+.num-key-box .change-key .ok-btn{
+    background-color:#ef8f52;
+    line-height: 229px;
+    height: 229px;
+}
+.current-information{
+    color:#9BADC5;
+    margin-top: 70px;
+}
+.close-btn{
+    width:70px;
+    line-height:78px;
+    text-align:center;
+    background-color:#E13A42;
+    position: relative;
+    bottom:10px;
+    right:0;
+    border:none;
+    border-radius:0 5px 5px 0;
+}
+
+.table tbody tr{
+    background-color:#ffffff !important;
+}
+/* 积分弹出层 */
+.using-btn{
+    width:190px;
+    height:66px;
+    color:#fff;
+    font-size:20px;
+    line-height:66px;
+    text-align:center;
+    background-color:#51A6FF;
+    border:none;
+    border-radius:5px;
+}
+.cancel-btn{
+    width:190px;
+    height:66px;
+    color:#51A6FF;
+    font-size:20px;
+    line-height:66px;
+    text-align:center;
+    background-color:#fff;
+    border:none;
+    border:1px solid #51A6FF;
+    border-radius:5px;
+}
+.point-left{
+    width:453px;
+    height:305px;
+    background-color:#f1f5f8;
+    margin-right:17px;
+    margin-left:28px;
+}
+.using_point_modal_btn{
+    text-align:center;
+    margin-top:10px;
+}
+.using-btn{
+    margin-right:114px;
+}
+.point-input-group{
+    margin:14px 0;
+}
+.point-left{
+    padding-top:35px;
+}
+.point-left label{
+    font-size:18px;
+    line-height:50px;
+    color:#2b557d;
+    margin-left:20px;
+    margin-right:10px;
+
+}
+.input-box{
+    width:326px;
+    background-color:#fff;
+    line-height:50px;
+    color:#cccccc;
+    border-radius:5px;
+    display:inline-block;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.return-btn{
+    width:190px;
+    height:66px;
+    color:#fff;
+    font-size:20px;
+    line-height:66px;
+    text-align:center;
+    background-color:#2b5e93;
+    border:none;
+    border-radius:5px;
+    margin:0 40px;
+}
+.coupon-list-box{
+    height:372px;
+    padding: 0 14px;
+    overflow-y:auto;
+}
+.coupon-list-box .coupon-list{
+    width:250px;
+    margin:10px 20px;
+    font-size:12px;
+    float:left;
+}
+.coupon-list-box .coupon-top{
+    width: 100%;
+    color:#fff;
+    background-color:#51A6FF;
+    padding: 5px 5px 10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.coupon-list-box .coupon-top p{
+    width:100%;
+    margin:0;
+    line-height:18px;
+    display:block;
+}
+.coupon-top img{
+    margin-right:10px;
+}
+.coupon-list-box .coupon-top .coupon-top-discount{
+    margin-top:16px;
+}
+.coupon-list-box .coupon-bottom{
+    color:#51A6FF;
+    background-color:#f1f5f8;
+    line-height:24px;
+    padding:0 5px;
+    position:relative;
+}
+.coupon-list-box .coupon-bottom-time{
+    position:absolute;
+    right:5px;
+}
+/* tab 优惠券 */
+.coupon-coupon-list{
+    width:100%;
+    background-color:#fff;
+    border-radius:5px;
+    height:400px;
+    position:relative;
+    margin-bottom:17px;
+    padding-top:22px;
+}
+.verification-coupon-btn{
+    width:470px;
+    height:66px;
+    line-height:66px;
+    border:none;
+    border-radius:5px;
+    background-color:#EF8F52;
+    position:absolute;
+    bottom:25px;
+    left:21px;
+    font-size: 20px;
+    letter-spacing:10px;
+}
+.coupon-coupon-list .coupon-top{
+    width: 100%;
+    color:#fff;
+    background-color:#51A6FF;
+    padding: 15px 12px 10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.coupon-coupon-list .coupon-top p{
+    font-size:16px;
+    line-height:20px;
+}
+.coupon-coupon-list .coupon-top-discount{
+    margin-top:20px;
+}
+.coupon-coupon-list .coupon-bottom{
+    color:#51A6FF;
+    background-color:#f1f5f8;
+    line-height:42px;
+    padding:0 12px;
+    position:relative;
+}
+.coupon-coupon-list .coupon-bottom-time{
+    position:absolute;
+    right:12px;
+}
+
+
+/* 操作日志 */
+.opeartion-log{
+    width:942px;
+    height:720px;
+    background-color:#2b5e93;
+    padding:15px;
+
+}
