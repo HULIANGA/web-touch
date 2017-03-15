@@ -439,3 +439,33 @@ input::-webkit-input-placeholder{
     padding:15px;
 
 }
+.opeartion-log .tab-box .tab-ul li{
+    width:310px;
+    line-height:68px;
+    font-size:20px;
+    display:inline-block;
+    background-color:#5783b4;
+    color:#2b5e93;
+    border-radius:5px 5px 0 0;
+    text-align:center;
+}
+.opeartion-log .tab-box .tab-ul li:nth-of-type(1){
+    margin-right:5px;
+}
+.opeartion-log .tab-box .tab-ul li.active{
+    color:#fff;
+    background-color:#51a6ff;
+}
+.search-box{
+    height:194px;
+    background-color: #51a6ff;
+}
+.search-form-group{
+    border-radius:5px;
+    overflow:hidden;
+}
+.search-form-group label{
+    width:117px;
+    line-height:52px;
+    background-color:#f1f5f8;
+}
