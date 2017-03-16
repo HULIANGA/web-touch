@@ -259,7 +259,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pos-coupon-content pull-l">
+			<div class="pos-coupon-content pull-l" style="display: none;">
 				<div class="content-left-box pull-l">
 					<div class="coupon-coupon-list">
 						<div class="coupon-list">
@@ -306,105 +306,106 @@
 						</table>
 				</div>
 			</div>
-			<div class="content-right-box pull-l">
-				<div class="coupon-input-keybox">
-					<div class="num-input">
-						<span class="text-num"></span>
-						<span class="cursor">|</span>
-						<span class="input-tip">扫码优惠券或输入优惠券码</span>
+				<div class="content-right-box pull-l">
+					<div class="coupon-input-keybox">
+						<div class="num-input">
+							<span class="text-num"></span>
+							<span class="cursor">|</span>
+							<span class="input-tip">扫码优惠券或输入优惠券码</span>
+						</div>
+						<div class="search-btn-box clearfix">
+							<button class="search-btn pull-l">优惠券核销</button>
+							<button class="search-btn pull-l">重新输入</button>
+						</div>
 					</div>
-					<div class="search-btn-box clearfix">
-						<button class="search-btn pull-l">优惠券核销</button>
-						<button class="search-btn pull-l">重新输入</button>
+					<div class="num-key-box clearfix">
+						<ul class="num-key-ul pull-l">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li class="zero-btn">0</li>
+							<li>.</li>
+						</ul>
+						<ul class="change-key pull-l">
+							<li class="delet-btn"></li>
+							<li class="ok-btn"></li>
+						</ul>
 					</div>
-				</div>
-				<div class="num-key-box clearfix">
-					<ul class="num-key-ul pull-l">
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-						<li>7</li>
-						<li>8</li>
-						<li>9</li>
-						<li class="zero-btn">0</li>
-						<li>.</li>
-					</ul>
-					<ul class="change-key pull-l">
-						<li class="delet-btn"></li>
-						<li class="ok-btn"></li>
-					</ul>
-				</div>
-				<div class="current-information">
-					<p><span class="store-name">门店明细</span>POS</p>
-					<p>员工姓名：<span class="staff-name">圈圈</span></p>
-					<p class="current-time">2017</p>
+					<div class="current-information">
+						<p><span class="store-name">门店明细</span>POS</p>
+						<p>员工姓名：<span class="staff-name">圈圈</span></p>
+						<p class="current-time">2017</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="opeartion-log pull-l" style="display: none;">
-			<div class="tab-box">
-				<ul class="tab-ul clearfix">
-					<li class="active">积分操作</li>
-					<li>优惠券核销</li>
-				</ul>
-			</div>
-			<div class="opeartion-point">
-				<div class="search-box">
-					<div class="search-form-group inline">
-						<label>会员卡号:</label>
-						<input type="text" value="" placeholder="输入会员卡号，20位" maxlength="20">
-					</div>
-					<div class="search-form-group inline">
-						<label>会员手机号:</label>
-						<input type="text" value="" placeholder="输入手机号，11位" maxlength="20">
-					</div>
-					<div class="search-form-group inline">
-						<label>操作日期:</label>
-						<input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
-						<div class="search-form-group inline coupon-coupon-btn-box">
+			<div class="opeartion-log pull-l">
+				<div class="tab-box">
+					<ul class="tab-ul clearfix">
+						<li class="active">积分操作</li>
+						<li>优惠券核销</li>
+					</ul>
+				</div>
+				<div class="opeartion-point">
+					<div class="search-box clearfix">
+						<div class="search-form-group pull-l">
+							<label>会员卡号:</label>
+							<input type="text" value="" placeholder="输入会员卡号，20位" maxlength="20">
+						</div>
+						<div class="search-form-group pull-l">
+							<label>会员手机号:</label>
+							<input type="text" value="" placeholder="输入手机号，11位" maxlength="20">
+						</div>
+						<div class="search-form-group pull-l">
+							<label>操作日期:</label>
+							<input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+						</div>
+						<div class="search-form-group coupon-coupon-btn-box pull-l">
 							<button class="coupon-coupon-search-btn">查询</button>
 							<button class="coupon-coupon-reset-btn">重置</button>
 						</div>
 					</div>
-					<div class="table-box">
-						<table class="table" border="0" cellspacing="0" cellpadding="0">
-							<thead>
-								<tr>
-									<th>会员</th>
-									<th>会员卡号</th>
-									<th>会员手机号</th>
-									<th>变更数值</th>
-									<th>操作时间</th>
-									<th>备注</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>会员</td>
-									<td>会员</td>
-									<td>会员</td>
-									<td>会员</td>
-									<td>会员</td>
-									<td>会员</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="table-box">
+							<table class="table" border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th>会员</th>
+										<th>会员卡号</th>
+										<th>会员手机号</th>
+										<th>变更数值</th>
+										<th>操作时间</th>
+										<th>备注</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>会员</td>
+										<td>会员</td>
+										<td>会员</td>
+										<td>会员</td>
+										<td>会员</td>
+										<td>会员</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="info pull-l">
+							<p>门店名称</p>
+							<p>员工姓名<span></span></p>
+							<p>当前日期</p>
+						</div>
+						<div class="change-table-btn-box pull-r">
+							<span class="circle pre-btn"><</span>
+							<span class="circle first-num active">1</span>
+							<span class="circle second-num">2</span>
+							<span class="circle next-btn">></span>
+						</div>
 					</div>
-					<div class="info pull-l">
-						<p>门店名称</p>
-						<p>员工姓名<span></span></p>
-						<p>当前日期</p>
-					</div>
-					<div class="change-table-btn-box pull-r">
-						<span class="circle pre-btn"><</span>
-						<span class="circle first-num active">1</span>
-						<span class="circle second-num">2</span>
-						<span class="circle next-btn">></span>
-					</div>
-				</div>
 				<div class="opeartion-coupon" style="display:none;">
 					<div class="search-box">
 						<div class="search-form-group inline">
@@ -425,9 +426,8 @@
 							<button class="coupon-coupon-reset-btn">重置</button>
 						</div>
 					</div>
-					<div class="table-box" style="border-radius:0 0 5px 5px;
-	    overflow: hidden;">
-						<table class="table" border="0" cellspacing="0" cellpadding="0">
+					<div class="table-box">
+						<table class="table">
 							<thead>
 								<tr>
 									<th>优惠券名称</th>
@@ -449,25 +449,25 @@
 								</tr>
 							</tbody>
 						</table>
-				</div>
-				<div class="info">
-					<p>门店名称</p>
-					<p>员工姓名<span></span></p>
-					<p>当前日期</p>
-				</div>
-				<div class="change-table-btn-box">
-
+					</div>
+					<div class="info">
+						<p>门店名称</p>
+						<p>员工姓名<span></span></p>
+						<p>当前日期</p>
+					</div>
+					<div class="change-table-btn-box">
+	
+					</div>
 				</div>
 			</div>
-		</div>
-		</div>
-		<div class="slide-tab-box pull-l">
-			<ul class="tab-list">
-				<li class="list-btn active">会员</li>
-				<li class="list-btn">优惠券</li>
-				<li class="list-btn">操作记录</li>
-			</ul>
-			<button class="close-btn"></button>
+			<div class="slide-tab-box pull-l">
+				<ul class="tab-list">
+					<li class="list-btn active">会员</li>
+					<li class="list-btn">优惠券</li>
+					<li class="list-btn">操作记录</li>
+				</ul>
+				<button class="close-btn"></button>
+			</div>
 		</div>
 
 		<!-- 积分弹出层 -->
