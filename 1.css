@@ -434,7 +434,7 @@ input::-webkit-input-placeholder{
 /* 操作日志 */
 .opeartion-log{
     width:942px;
-    height:720px;
+    height:700px;
     background-color:#2b5e93;
     padding:15px;
 
@@ -456,16 +456,91 @@ input::-webkit-input-placeholder{
     color:#fff;
     background-color:#51a6ff;
 }
-.search-box{
+.opeartion-log .search-box{
     height:194px;
     background-color: #51a6ff;
+    padding-top:5px;
 }
 .search-form-group{
     border-radius:5px;
     overflow:hidden;
+    display: inline-block;
+    margin-left:25px;
+    margin-top:5px;
 }
 .search-form-group label{
-    width:117px;
+    width: 117px;
+    line-height: 52px;
+    background-color: #f1f5f8;
+    margin: 0;
+    color: #2b5e93;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.search-form-group input{
+    width: 300px;
+    height:52px;
+    line-height: 52px;
+    border: none;
+    text-align: center;
+    margin-left: -8px;
+    padding: 0;
+    outline: none;
+    vertical-align: middle;
+    font-size:20px;
+    color:#aaa;
+}
+.search-form-group input::-webkit-input-placeholder {
+   line-height:52px;
+}
+.search-form-group input:-moz-placeholder{
     line-height:52px;
-    background-color:#f1f5f8;
+}
+.search-form-group input::-ms-input-placeholder{
+    line-height:52px;
+}
+.line-time{
+    color:#fff;
+    margin:0 9px;
+    font-weight:bold;
+}
+.coupon-coupon-btn-box button{
+    width:194px;
+    line-height:50px;
+    border:none;
+    border-radius:5px;
+    font-size:20px;
+    float:right;
+    margin-right:25px;
+    margin:5px 25px 0 0;
+}
+.coupon-coupon-reset-btn{
+    background-color:#1ccad8;
+}
+.coupon-coupon-search-btn{
+    background-color:#ef8f52;
+}
+.info p{
+    font-size:12px;
+    color:#96a9c2;
+    line-height:20px;
+}
+.change-table-btn-box{
+
+}
+.circle{
+    width:45px;
+    height:45px;
+    border-radius:45px;
+    background-color:#fff;
+    display:inline-block;
+    line-height:45px;
+    color:#51a6ff;
+    text-align:center;
+    font-size:25px;
+}
+.first-num.active{
+    color:#fff;
+    background-color:#51a6ff;
 }
