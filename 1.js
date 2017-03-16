@@ -1,31 +1,28 @@
 $(function(){
-    $('.num-input').on('click',function(){
-        $('.input-tip').hide();
-        $('.cursor').show();
+	$('body').on('click', function(){
+	})
+    $('.num-input').on('click',function(e){
+        $(this).addClass('active');
     })
-    $('.num-key-ul li').on('click',function(){//touchend
-        var text=$('.num-input .text-num').text()+$(this).text();
-        $('.num-key-box li').removeClass('visited');
-        $('.delet-btn').find('img').attr('src','img/delet-icon.png');
-        $('.ok-btn').find('img').attr('src','img/ok-icon.png');
+    $('.num-key-ul li').on('mousedown',function(e){
+        var text=$('.num-input.active .text-num').text()+$(this).text();
         $(this).addClass('visited');
-        $('.num-input .text-num').text(text);
-        $('.input-tip').hide();
-        $('.cursor').show();
+        $('.num-input.active .text-num').text(text);
     })
-    $('.change-key li').on('click',function(){//touchend
-        $('.num-key-box li').removeClass('visited');
+    $('.num-key-ul li').on('mouseup',function(e){
+    	$('.num-key-ul li').removeClass('visited');
+    });
+	$('.change-key li').on('mousedown',function(e){
         $(this).addClass('visited');
         if($(this).hasClass('delet-btn')){
-            $(this).find('img').attr('src','img/delet-icon-a.png');
-            $('.num-input  .text-num').text('');
-            $('.cursor').hide();
-            $('.input-tip').show();
+            $('.num-input.active .text-num').text('');
         }
         if($(this).hasClass('ok-btn')){
-            $(this).find('img').attr('src','img/ok-icon-a.png');
             search();
         }
+    })
+    $('.change-key li').on('mouseup',function(e){
+        $('.change-key li').removeClass('visited');
     })
     //查询状态切换
     $('.search-btn-box button').on('click',function(){
