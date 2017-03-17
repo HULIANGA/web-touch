@@ -1,6 +1,27 @@
 $(function(){
-	$('body').on('click', function(){
+	// 切换主菜单
+	$('.slide-tab-box .tab-list .list-btn').on('click', function(){
+		$('.slide-tab-box .tab-list .list-btn').removeClass('active');
+		$(this).addClass('active');
+		$('.slide-tab-item').hide();
+		$('.slide-tab-item[data-index='+$(this).attr('data-index')+']').show();
 	})
+	// 切换会员菜单
+	$('.member-info-table .style-list li').on('click', function(){
+		$('.member-info-table .style-list li').removeClass('active');
+		$(this).addClass('active');
+		$('.style-list-item').hide();
+		$('.style-list-item[data-index='+$(this).attr('data-index')+']').show();
+	})
+	// 切换操作记录菜单
+	$('.tab-ul li').on('click', function(){
+		$('.tab-ul li').removeClass('active');
+		$(this).addClass('active');
+		$('.tab-ul-item').hide();
+		$('.tab-ul-item[data-index='+$(this).attr('data-index')+']').show();
+	})
+	
+	
     $('.num-input').on('click',function(e){
         $(this).addClass('active');
     })

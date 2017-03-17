@@ -13,7 +13,7 @@
 
 	<body>
 		<div class="pos-box clearfix">
-			<div class="pos-constom-content pull-l" style="display: none;">
+			<div class="slide-tab-item pos-constom-content pull-l" data-index="1">
 				<div class="content-left-box pull-l">
 					<div class="memberleft-box">
 						<div class="member-info clearfix">
@@ -45,10 +45,10 @@
 						</div>
 						<div class="member-info-table">
 							<ul class="style-list clearfix">
-								<li class="active">积分</li>
-								<li>优惠券</li>
+								<li class="active" data-index = "1">积分</li>
+								<li data-index = "2">优惠券</li>
 							</ul>
-							<div class="member-point-box table-responsive">
+							<div class="member-point-box style-list-item" data-index = "1">
 								<div class="table-head">
 									<p>
 										<span>
@@ -165,63 +165,63 @@
 										</tbody>
 									</table>
 							</div>
-						</div>
-						<div class="member-coupon-box" style="display:none;">
-							<div class="table-head">
-								<p>
-									<span>
-                    <img src="img/member-coupon-icon.png" />
-                    <span>可用优惠券：<span class="coupon-num"></span></span>张
-									</span>
-									<button class="using-coupon-btn pull-r">使用优惠券</button>
-								</p>
 							</div>
-							<div class="table-box">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>优惠券名称</th>
-											<th>类型</th>
-											<th>面额</th>
-											<th>有效期</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>会员</td>
-											<td>会员</td>
-											<td>会员</td>
-											<td>会员</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="member-coupon-box style-list-item" data-index = "2" style="display:none;">
+								<div class="table-head">
+									<p>
+										<span>
+	                    <img src="img/member-coupon-icon.png" />
+	                    <span>可用优惠券：<span class="coupon-num"></span></span>张
+										</span>
+										<button class="using-coupon-btn pull-r">使用优惠券</button>
+									</p>
+								</div>
+								<div class="table-box" style="height: 300px;">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>优惠券名称</th>
+												<th>类型</th>
+												<th>面额</th>
+												<th>有效期</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>会员</td>
+												<td>会员</td>
+												<td>会员</td>
+												<td>会员</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box" style="height: 154px;">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>优惠券名称</th>
+												<th>类型</th>
+												<th>面额</th>
+												<th>券码</th>
+												<th>核销时间</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>会员</td>
+												<td>会员</td>
+												<td>会员</td>
+												<td>会员</td>
+												<td>会员</td>
+											</tr>
+										</tbody>
+									</table>
 							</div>
-							<div class="table-box">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>优惠券名称</th>
-											<th>类型</th>
-											<th>面额</th>
-											<th>券码</th>
-											<th>核销时间</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>会员</td>
-											<td>会员</td>
-											<td>会员</td>
-											<td>会员</td>
-											<td>会员</td>
-										</tr>
-									</tbody>
-								</table>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 				<div class="content-right-box pull-l">
 					<div class="point-input-keybox">
 						<div class="num-input">
@@ -259,7 +259,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pos-coupon-content pull-l" style="display: none;">
+			<div class="slide-tab-item pos-coupon-content pull-l" data-index="2" style="display: none;">
 				<div class="content-left-box pull-l">
 					<div class="coupon-coupon-list">
 						<div class="coupon-list">
@@ -344,14 +344,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="opeartion-log pull-l">
+			<div class="slide-tab-item opeartion-log pull-l" data-index="3" style="display: none;">
 				<div class="tab-box">
 					<ul class="tab-ul clearfix">
-						<li class="active">积分操作</li>
-						<li>优惠券核销</li>
+						<li class="active" data-index = "1">积分操作</li>
+						<li data-index = "2">优惠券核销</li>
 					</ul>
 				</div>
-				<div class="opeartion-point">
+				<div class="opeartion-point tab-ul-item" data-index = "1">
 					<div class="search-box clearfix">
 						<div class="search-form-group pull-l">
 							<label>会员卡号:</label>
@@ -363,7 +363,7 @@
 						</div>
 						<div class="search-form-group pull-l">
 							<label>操作日期:</label>
-							<input type="text" value="" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+							<input type="text" value="" placeholder="点击选择操作日期" maxlength="20">
 						</div>
 						<div class="search-form-group coupon-coupon-btn-box pull-l">
 							<button class="coupon-coupon-search-btn">查询</button>
@@ -406,22 +406,21 @@
 							<span class="circle next-btn">></span>
 						</div>
 					</div>
-				<div class="opeartion-coupon" style="display:none;">
-					<div class="search-box">
-						<div class="search-form-group inline">
+				<div class="opeartion-coupon tab-ul-item" data-index = "2" style="display:none;">
+					<div class="search-box clearfix">
+						<div class="search-form-group pull-l">
 							<label>优惠券券码:</label>
-							<input type="text" value="" placeholder="输入优惠券券码，20位" data-inputtype="number" maxlength="20">
+							<input type="text" value="" placeholder="输入优惠券券码，20位" maxlength="20">
 						</div>
-						<div class="search-form-group inline">
+						<div class="search-form-group pull-l">
 							<label>优惠券名称:</label>
-							<input type="text" value="" placeholder="输入优惠券名称，11位" data-inputtype="number" maxlength="11">
+							<input type="text" value="" placeholder="输入优惠券名称，11位" maxlength="11">
 						</div>
-						<div class="search-form-group inline">
+						<div class="search-form-group pull-l">
 							<label>操作日期:</label>
-							<input type="text" value="" style="border-radius:0 5px 5px 0;" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20"><span class="line-time">—</span>
-							<input type="text" value="" style="border-radius:5px 0 0 5px;" placeholder="点击选择操作日期" data-inputtype="number" maxlength="20">
+							<input type="text" value="" placeholder="点击选择操作日期" maxlength="20">
 						</div>
-						<div class="coupon-coupon-btn-box">
+						<div class="search-form-group coupon-coupon-btn-box pull-l">
 							<button class="coupon-coupon-search-btn">查询</button>
 							<button class="coupon-coupon-reset-btn">重置</button>
 						</div>
@@ -462,9 +461,9 @@
 			</div>
 			<div class="slide-tab-box pull-l">
 				<ul class="tab-list">
-					<li class="list-btn active">会员</li>
-					<li class="list-btn">优惠券</li>
-					<li class="list-btn">操作记录</li>
+					<li class="list-btn active" data-index="1">会员</li>
+					<li class="list-btn" data-index="2">优惠券</li>
+					<li class="list-btn" data-index="3">操作记录</li>
 				</ul>
 				<button class="close-btn"></button>
 			</div>
