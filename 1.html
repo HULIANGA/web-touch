@@ -224,13 +224,13 @@
 			</div>
 				<div class="content-right-box pull-l">
 					<div class="point-input-keybox">
-						<div class="num-input">
-							<span class="text-num"></span><span class="cursor blink">|</span>
-							<span class="input-tip">请输入卡号或手机号</span>
+						<div class="num-input active">
+							<span class="text-num"></span><span class="cursor">|</span>
+							<span class="input-tip">请输入卡号</span>
 						</div>
 						<div class="search-btn-box clearfix">
-							<button class="search-btn pull-l">查询卡号</button>
-							<button class="search-btn pull-l">查询手机号</button>
+							<button class="search-btn pull-l visited" data-placeholder="请输入卡号">输入卡号</button>
+							<button class="search-btn pull-l" data-placeholder="请输入手机号">输入手机号</button>
 						</div>
 					</div>
 					<div class="num-key-box clearfix">
@@ -309,13 +309,12 @@
 				<div class="content-right-box pull-l">
 					<div class="coupon-input-keybox">
 						<div class="num-input">
-							<span class="text-num"></span>
-							<span class="cursor">|</span>
+							<span class="text-num"></span><span class="cursor">|</span>
 							<span class="input-tip">扫码优惠券或输入优惠券码</span>
 						</div>
 						<div class="search-btn-box clearfix">
-							<button class="search-btn pull-l">优惠券核销</button>
-							<button class="search-btn pull-l">重新输入</button>
+							<button class="search-btn pull-l" style="visibility: hidden;">重新输入</button>
+							<button class="search-btn pull-l visited">重新输入</button>
 						</div>
 					</div>
 					<div class="num-key-box clearfix">
@@ -370,8 +369,8 @@
 							<button class="coupon-coupon-reset-btn">重置</button>
 						</div>
 					</div>
-						<div class="table-box">
-							<table class="table" border="0" cellspacing="0" cellpadding="0">
+						<div class="table-box" style="height: 415px;">
+							<table class="table">
 								<thead>
 									<tr>
 										<th>会员</th>
@@ -480,24 +479,24 @@
 					<div class="modal-body clearfix">
 						<div class="clearfix">
 							<div class="point-left pull-l">
-								<div class="point-input-group">
-									<label>使用积分</label>
-									<div class="using-point-num input-box">
-										<span class="text-num"></span><span class="cursor blink">|</span>
+								<div class="point-input-group clearfix">
+									<label class="pull-l">使用积分</label>
+									<div class="num-input input-box pull-l">
+										<span class="text-num"></span><span class="cursor">|</span>
 										<span class="input-tip">输入使用积分数，5位数以内</span>
 									</div>
 								</div>
-								<div class="point-input-group">
-									<label>收银金额</label>
-									<div class="input-box">
-										<span class="text-num"></span><span class="cursor blink">|</span>
+								<div class="point-input-group clearfix">
+									<label class="pull-l">收银金额</label>
+									<div class="num-input input-box pull-l">
+										<span class="text-num"></span><span class="cursor">|</span>
 										<span class="input-tip">输入收银金额，10位数以内，两位小数</span>
 									</div>
 								</div>
-								<div class="point-input-group">
-									<label>线下单号</label>
-									<div class="input-box">
-										<span class="text-num"></span><span class="cursor blink">|</span>
+								<div class="point-input-group clearfix">
+									<label class="pull-l">线下单号</label>
+									<div class="num-input input-box pull-l">
+										<span class="text-num"></span><span class="cursor">|</span>
 										<span class="input-tip">输入或扫描线下单号，20位以内</span>
 									</div>
 								</div>
